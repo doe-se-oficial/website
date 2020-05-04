@@ -6,7 +6,10 @@
     src: local('../_assets/fonts/segoe-mt.ttf'), url('../_assets/fonts/segoe-mt.ttf');
 } 
 
-/* Tags */
+/* Id's */
+#title {
+    font-size: 3.8em;
+}
 
 /**
  * Remove os indicadores de uma <ul>
@@ -35,7 +38,7 @@ ul {
     background-color: #92d4de;
     color: white;
     font-weight: bold;
-    padding: 3% 5% 3% 5%;
+    padding: 1em 3em 1em 3em;
     border: none;
     border-radius: 90px;
 }
@@ -105,28 +108,62 @@ ul {
 /**
  * Insere uma margem de segurança de 5% em cima e em baixo entre as tags de semântica
  */
-.secutiry-margin {
-    margin: 5% 0 5% 0;
+.security-margin {
+    margin-bottom: 5%;
 }
 
-/**
- * Altera a cor de um texto para lightblue: #92d4de
- */
-.color-lightblue {
-    color: #92d4de !important;
+/* Colors */
+.border-lightgray {
+    border-color: #bfbfbf;
+}
+
+.text-lightgray {
+    color: #bfbfbf !important;
+}
+
+.text-gray {
+    color: #adadad !important;
+}
+
+.text-red {
+    color: #e60000 !important;
+}
+
+.text-blue {
+    color: #0de3ff !important;
+}
+
+.text-green {
+    color: #17c29d !important;
+}
+
+/* Bordas */
+#importantOptions li {
+    padding: 0px 0px 0px 0px;
+}
+
+#donator:hover {
+    border-color: #cf0606 !important;
+    box-shadow: 0px 0px 2px rgba(255, 0, 0, 0.6), 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#partner:hover {
+    border-color: #07c7e0 !important;
+    box-shadow: 0px 0px 2px rgba(0, 226, 255, 0.6), 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#whatsapp:hover {
+    border-color: #17c29d !important;
+    box-shadow: 0px 0px 2px rgba(25, 209, 169, 0.6), 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#whatsapp a:hover, #donator a:hover, #partner a:hover {
+    color: #757575 !important;
 }
 
 /**
  * Altera a cor de um texto para lightgray: #bfbfbf
  */
-.color-lightgray {
-    color: #bfbfbf !important;
-}
-
-.color-red {
-    color: #e60000 !important;
-}
-
 .bg-gray {
     background-color: #e5e4e9;
     border-radius: 30px;
@@ -140,8 +177,12 @@ ul {
 /**
  * Mantém ícones sempre com a mesma medida de 40 pixels
  */
+.little-shadow {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
 .icon-width {
-    width: 40px;
+    width: 50px;
 }
 
 .border-rounded {
@@ -151,8 +192,8 @@ ul {
 
 .full-image {
     z-index: -1;
-    position: absolute;
-    transform: translateY(-62%);
+    height: 100%;
+    transform: translateY(-50%);
 }
 
 .white-card {
@@ -165,8 +206,26 @@ ul {
     font-size: 50pt;
 }
 
-@media (min-width: 1200px) {
-    .h-xl-50 {
-        height: 50vh;
-    }
+footer {
+    background: url("../_assets/img/rodape.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+}
+
+#contato-whatsapp {
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+div .sobreposicao:hover {
+    background: rgba(20, 31, 64, 0.8);
+}
+
+.text-indent-normal {
+    text-indent: 1.5em;
+}
+
+.menu-scroll-security {
+    padding-top: 90px;
 }

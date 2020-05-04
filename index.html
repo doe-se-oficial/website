@@ -14,11 +14,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Css Imports -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="_css/styles.css">
+        <link rel="stylesheet" href="_css/animate.css">
+        <link rel="stylesheet" href="_css/media-queries.css">
+        <link rel="stylesheet" href="_css/carousel.css">
     </head>
 
-    <body id="background">
+    <body data-spy="scroll">
         <header class="fixed-top bg-white">
             <nav class="navbar navbar-expand-lg navbar-light border-bottom">
                 <a class="navbar-brand" href="#">
@@ -28,72 +31,67 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    <p>asdhbfiashdfiashdiasd</p>
-                    <p>asdhbfiashdfiashdiasd</p>
-                    <p>asdhbfiashdfiashdiasd</p>
-                    <p>asdhbfiashdfiashdiasd</p>
-                    <p>asdhbfiashdfiashdiasd</p>
-                    <p>asdhbfiashdfiashdiasd</p>
                 </button>
 
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#funcionamento">Como funciona?<span class="sr-only">(current)</span></a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#howItWorks">Como funciona?<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="#news">Doe-se News</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hemocentros">Hemocentros</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#bloodCenters">Hemocentros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre nós</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">Sobre nós</a>
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link color-red border-rounded" href="#sobre">SEJA UM DOADOR</a>
+                    <ul id="importantOptions" class="navbar-nav">
+                        <li id="donator" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
+                            <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM DOADOR</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link color-lightblue border-rounded" href="#sobre">SEJA UM PARCEIRO</a>
+                        <li id="partner" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
+                            <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM PARCEIRO</a>
+                        </li>
+                        <li id="whatsapp" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
+                            <a class="nav-link text-lightgray text-center" href="#sobre">ENTRE EM CONTATO</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main id="home" class="container-fluid p-0 d-flex">
-            <section class="d-flex align-items-center h-100">
-                <div class="d-flex flex-wrap justify-content-center align-items-center h-xl-50">
-                    <div class="col-12 col-lg-5 col-xl-3 align-items-start h-100">
-                        <h1 class="font-up">Doe sangue,<br><span class="color-lightblue">doe vida,</span><br>Doe-se</h1>
-                        <h3 class="color-lightgray">A maior comunidade de doadores de sangue e hemocentros do Brasil!</h3>
+        <main id="home" class="d-flex justify-content-center align-items-center" height="100vh" style="padding-top: 72px;">
+            <section class="d-flex col-xl-10 flex-wrap">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h1 id="title" class="font-up">Doe sangue,<br><span class="text-lightblue">doe vida,</span><br>Doe-se</h1>
+                    <div class="d-none d-md-block">
+                        <h3 class="text-center text-md-left text-muted">A maior comunidade de doadores de sangue e hemocentros do Brasil!</h3>
                     </div>
+                </div>
 
-                    <div class="col-12 col-lg-5 col-xl-4 d-flex justify-content-center h-100">
-                        <img class="img-fluid" src="_assets/img/doacao_principal.svg">
-                    </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <img class="img-fluid" src="_assets/img/doacao_principal.svg">
+                </div>
 
-                    <div class="col-12 col-xl-3 d-none d-xl-block h-100">
-                        <div class="d-flex flex-column justify-content-center white-card h-100">
-                            <h2 class="text-center mb-5 text-dark source-sans-pro">Venha fazer parte também e descubra o que mais você é capaz de fazer além de salvar vidas!</h2>
-                            <button id="seja_doador" class="button_cadastrar blue_button mt-5 mx-5"><strong>SEJA UM DOADOR AGORA</strong></button>
-                        </div>
+                <div class="col-12 col-xl-4 d-none d-xl-block">
+                    <div class="d-flex flex-column justify-content-center white-card h-100 px-5">
+                        <h2 class="text-center mb-5 text-dark source-sans-pro">Venha fazer parte também e descubra o que mais você é capaz de fazer além de salvar vidas!</h2>
+                        <button id="seja_doador" class="button_cadastrar blue_button mt-5"><strong>SEJA UM DOADOR AGORA</strong></button>
                     </div>
                 </div>
             </section>
         </main>
 
-        <section class="">
-            <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
-        </section>
+        <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
 
         <!-- Container geral -->
-        <section class="col-12 col-lg-10 offset-lg-1">
+        <section class="col-12 px-0">
             <!-- Como Funciona -->
-            <section id="como_funciona" class="row secutiry-margin">
+            <section id="howItWorks" class="secutiry-margin menu-scroll-security d-none d-md-block d-md-flex col-md-10 mx-auto">
                 <div class="col-12 col-xl-7 px-lg-5">
                     <h1 class="text-center">Como funciona</h1>
                     <p class="text-center">O Doe-se conecta os hemocentros com potenciais doadores, ao notar necessidades específicas de cada hemocentro, nossos algoritmos disparam os chamados para os heróis!</p>
@@ -208,78 +206,190 @@
                     </section>
                 </div>
 
-                <div class="col-12 col-xl-5 d-flex justify-content-center">
-                    <img src="_assets/img/doacao.svg" class="img-fluid" alt="Menino feliz, sentado em uma pontrona dodando sangue pensando o quão bom é fazer ações solidárias.">
+                <div class="d-flex col-xl-5 justify-content-center align-items-center my-5" style="padding: 0px 50px 0px 50px;">
+                    <img src="_assets/img/doacao.png" class="img-fluid" alt="Menino feliz, sentado em uma pontrona dodando sangue pensando o quão bom é fazer ações solidárias.">
+                </div>
+            </section>
+
+            <section id="howItWorksMob" class="d-sm-block d-md-none col-10 mx-auto">
+                <h1 class="text-center">Como funciona</h1>
+                <p class="text-center">O Doe-se conecta os hemocentros com potenciais doadores, ao notar necessidades específicas de cada hemocentro, nossos algoritmos disparam os chamados para os heróis!</p>
+
+                <div class="col-12 little-shadow p-4 my-3">
+                    <h3>1. Cadastre-se</h3>
+
+                    <div class="d-flex align-items-center my-4">
+                        <div class="col-4 col-sm-3">
+                            <img src="_assets/img/cadastrese.png" class="img-fluid" alt="Cadastre-se!">
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <p class="text-secondary text-indent-normal text-justify">Em poucos passos você consegue se cadastrar, com a finalização do cadastro já pode responser a ficha de triagem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 little-shadow p-4 my-3">
+                    <h3>2. Responda a triagem</h3>
+
+                    <div class="d-flex align-items-center my-4">
+                        <div class="col-4 col-sm-3">
+                            <img src="_assets/img/triagem.png" class="img-fluid" alt="Prancheta, responda a triagem!">
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <p class="text-secondary text-indent-normal text-justify">Responda a triagem para sabermos se você está aopto para doar, ou avisaremos quando estiver!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 little-shadow p-4 my-3">
+                    <h3>3. Receba um chamado</h3>
+
+                    <div class="d-flex align-items-center my-4">
+                        <div class="col-4 col-sm-3">
+                            <img src="_assets/img/hero.png" class="img-fluid" alt="Seja um herói!">
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <p class="text-secondary text-indent-normal text-justify">Quando um hemocentro perto de você precisar de doações do seu tipo sanguíneo, você receberá um chamado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 little-shadow p-4 my-3">
+                    <h3>4. Salve vidas</h3>
+
+                    <div class="d-flex align-items-center my-4">
+                        <div class="col-4 col-sm-3">
+                            <img src="_assets/img/blood.png" class="img-fluid" alt="Bolsa de sangue feliz!">
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <p class="text-secondary text-indent-normal text-justify">Basta ir para a doação seguindo as recomendações e pronto, salve até quatro vidas!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 little-shadow p-4 my-3">
+                    <h3>5. Pontue</h3>
+
+                    <div class="d-flex align-items-center my-4">
+                        <div class="col-4 col-sm-3">
+                            <img src="_assets/img/pontue.png" class="img-fluid" alt="Medalha de estelinha, acumule pontos!">
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <p class="text-secondary text-indent-normal text-justify">Cada doação vale pontos, você sobe no ranking e ainda pode trocar pontos por mimos incríveis, final, você merece!</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Doe-se News -->
-            <section id="news" class="secutiry-margin container-fluid">
-                <div class="col-12 col-lg-6 offset-lg-6">
-                    <h1 class="text-center title-edit">Doe-se News</h1>
-                    <p class="text-center">Quer saber mais sobre a gente? Dá uma olhadinha nas matérias dos jornais e revistas onde saímos :)</p>
+            <section id="news" class="menu-scroll-security col-12 col-xl-10 mx-auto">
+                <h1 class="text-center mb-5">Doe-se News</h1>
+
+                <div class="container-fluid">
+        	    	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+        	    		<div class="carousel-inner row w-100 mx-auto" role="listbox">
+                			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                <img src="_assets/backgrounds/1.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img1">
+                                <div class="sobreposicao"></div>
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/2.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img2">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/3.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img3">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/4.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img4">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/5.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img5">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/6.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img6">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/7.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img7">
+			    			</div>
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    				<img src="_assets/backgrounds/8.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img8">
+			    			</div>
+        	    		</div>
+        	    		<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+			    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    			<span class="sr-only">Previous</span>
+			    		</a>
+			    		<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+			    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    			<span class="sr-only">Next</span>
+			    		</a>
+        	    	</div>
                 </div>
 
-                <div>
-                    <p class="text-center text-danger">AQUI TÁ FALTANDO AS NOTÍCIAS :)</p>
-                    <p class="text-center"><a href="#">Veja mais</a></p>
+                <div class="d-flex justify-content-center">
+                    <a href="notices.html"><button class="mt-5 blue_button">TODAS AS NOTÍCIAS</button></a>
                 </div>
             </section>
 
             <!-- Hemocentros Parceiros -->
-            <section id="hemocentros" class="secutiry-margin container-fluid">
-                <div class="col-12 col-xl-6">
-                    <h1 class="text-center">Hemocentros Parceiros</h1>
-                </div>
+            <section id="bloodCenters" class="menu-scroll-security container-fluid px-0">
+                <h1 class="text-center mb-5">Hemocentros Parceiros</h1>
 
-                <div class="p-0">
-                    <form>
-                        <label class="source-sans-pro">Digite seu CEP:</label>
-                        <input class="search-input" placeholder="CEP">
-                        <button class="search-button"><i class="fas fa-search"></i></button>
-                    </form>
-
-                    <iframe class="col-12 col-xl-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119339.93587975!2d-49.45239536787012!3d-20.81663926913405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2zU8OjbyBKb3PDqSBkbyBSaW8gUHJldG8sIFNQ!5e0!3m2!1spt-BR!2sbr!4v1575679859053!5m2!1spt-BR!2sbr" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div style="height: 60vh;">
+                    <iframe class="col-12 p-0 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29835.502593125606!2d-49.37844992495537!3d-20.814019478971108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1588448607797!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </section>
 
-            <!-- Acreditam em nós -->
-            <section id="parceiros" class="secutiry-margin container-fluid">
-                <div class="col-12 col-lg-6 offset-lg-6">
-                    <h1 class="text-center">Acreditam em nós</h1>
-                    
-                    <div class="d-flex justify-content-around align-items-center flex-wrap mt-5">
+            <!-- Entre em Contato -->
+            <section id="contato" class="secutiry-margin menu-scroll-security container-fluid mb-5">
+                <div class="col-12 col-lg-4 mx-auto mb-4">
+                    <h1 class="text-center mb-5">Entre em contato</h1>
+
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex flex-column align-items-center col-4">
+                            <img src="_assets/img/whatsapp.png" target="_blank" class="img-fluid icon-width mb-2" alt="Ícone do WhatsApp">
+                            <b>WhatsApp</b>
+                            <a href="#" class="text-dark text-nowrap">(17) 99758-7290</a>
+                        </div>
+                        <div class="d-flex flex-column align-items-center col-4">
+                            <img src="_assets/img/instagram.png" class="img-fluid icon-width mb-2" alt="ícone do Instagram">
+                            <b>Instagram</b>
+                            <a href="https://www.instagram.com/doeserp/" target="_blank" class="text-dark">@Doeserp</a>
+                        </div>
+                        <div class="d-flex flex-column align-items-center col-4">
+                            <img src="_assets/img/facebook.png" class="img-fluid icon-width mb-2" alt="Ícone do Facebook">
+                            <b>Facebook</b>
+                            <a href="https://www.facebook.com/Doe-se-245663879696342/?epa=SEARCH_BOX" target="_blank" class="text-dark">Doe-se</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="d-flex align-items-end">
+                <div class="container justify-content-center mb-4">
+                    <div class="d-flex justify-content-around align-items-center flex-wrap">
                         <img src="_assets/img/google.png" alt="Google Logotipo" class="img-fluid">
                         <img src="_assets/img/cps.png" alt="Centro Paula Souza Logotipo" class="img-fluid">
                         <img src="_assets/img/estado.png" alt="Governo do Estado de São Paulo Logotipo" class="img-fluid">
                         <img src="_assets/img/ideas_de_futuro.png" alt="Ideias de Futuro Logotipo" class="img-fluid">
                     </div>
                 </div>
-            </section>
-
-            <!-- Entre em Contato -->
-            <footer id="contato" class="security-margin container-fluid">
-                <div class="col-12 col-lg-6">
-                    <h1 class="text-center">Entre em contato</h1>
-
-                    <ul>
-                        <li class="m-3"><img src="_assets/img/whatsapp.png" class="img-fluid icon-width mr-4" alt="Ícone do WhatsApp">WhatsApp: <a href="#" class="text-dark">(17) 99758-7290</a></li>
-                        <li class="m-3"><img src="_assets/img/instagram.png" class="img-fluid icon-width mr-4" alt="ícone do Instagram">Instagram: <a href="#" class="text-dark">@Doese098</a></li>
-                        <li class="m-3"><img src="_assets/img/facebook.png" class="img-fluid icon-width mr-4" alt="Ícone do Facebook">Facebook: <a href="#" class="text-dark">Doe-se</a></li>
-                    </ul>
-                </div>
             </footer>
         </section>
 
         <!-- Whastapp Icon -->
-        <aside id="contato-whats" class="fixed-bottom d-none d-lg-block">
-            <a href=""><img width="60px" class="float-right m-4" src="_assets/img/whatsapp_aside.png"></a>
+        <aside class="fixed-bottom d-none d-lg-block">
+            <a id="contato-whatsapp" href=""></a>
+                <img  width="50px" class="float-right m-4" src="_assets/img/whatsapp_aside.png">
+            </a>
         </aside>
 
         <!-- JavaScript Imports -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="_js/jquery.backstretch.min.js"></script>
+        <script src="_js/wow.min.js"></script>
+        <script src="_js/scripts.js"></script>
         <script src="https://kit.fontawesome.com/93bfdb6ed0.js" crossorigin="anonymous"></script>
     </body>
 </html>
