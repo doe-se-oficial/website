@@ -53,9 +53,6 @@
                         <li id="donator" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
                             <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM DOADOR</a>
                         </li>
-                        <li id="partner" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
-                            <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM PARCEIRO</a>
-                        </li>
                         <li id="whatsapp" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
                             <a class="nav-link text-lightgray text-center" href="#sobre">ENTRE EM CONTATO</a>
                         </li>
@@ -64,8 +61,8 @@
             </nav>
         </header>
 
-        <main id="home" class="d-flex justify-content-center align-items-center" height="100vh" style="padding-top: 72px;">
-            <section class="d-flex col-xl-10 flex-wrap">
+        <main id="home" class="d-flex justify-content-center align-items-center flex-wrap" height="100vh" style="padding-top: 72px;">
+            <section class="d-flex align-items-start col-xl-10 flex-wrap">
                 <div class="col-12 col-md-6 col-xl-4">
                     <h1 id="title" class="font-up">Doe sangue,<br><span class="text-lightblue">doe vida,</span><br>Doe-se</h1>
                     <div class="d-none d-md-block">
@@ -73,27 +70,32 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
                     <img class="img-fluid" src="_assets/img/doacao_principal.svg">
                 </div>
 
                 <div class="col-12 col-xl-4 d-none d-xl-block">
-                    <div class="d-flex flex-column justify-content-center white-card h-100 px-5">
+                    <div class="d-flex flex-column justify-content-center white-card h-100 p-5">
                         <h2 class="text-center mb-5 text-dark source-sans-pro">Venha fazer parte também e descubra o que mais você é capaz de fazer além de salvar vidas!</h2>
-                        <button id="seja_doador" class="button_cadastrar blue_button mt-5"><strong>SEJA UM DOADOR AGORA</strong></button>
+                        <button id="seja_doador" class="button_cadastrar blue_button px-2"><strong>SEJA UM DOADOR</strong></button>
                     </div>
                 </div>
             </section>
         </main>
 
-        <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
+        <section class="position-absolute col-12 p-0">
+            <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
+        </section>
 
         <!-- Container geral -->
-        <section class="col-12 px-0">
+        <section class="col-12 px-0" style="margin-top: 18%;">
             <!-- Como Funciona -->
             <section id="howItWorks" class="secutiry-margin menu-scroll-security d-none d-md-block d-md-flex col-md-10 mx-auto">
                 <div class="col-12 col-xl-7 px-lg-5">
-                    <h1 class="text-center">Como funciona</h1>
+                    <div class="d-flex justify-content-center align-items-end mb-5">
+                        <h1 class="text-center">Como funciona?</h1>
+                        <span style="background: #92d4de; width: 290px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
+                    </div>
                     <p class="text-center">O Doe-se conecta os hemocentros com potenciais doadores, ao notar necessidades específicas de cada hemocentro, nossos algoritmos disparam os chamados para os heróis!</p>
 
                     <section id="way" class="row">
@@ -212,14 +214,17 @@
             </section>
 
             <section id="howItWorksMob" class="d-sm-block d-md-none col-10 mx-auto">
-                <h1 class="text-center">Como funciona</h1>
+                <div class="d-flex justify-content-center align-items-end mb-5">
+                    <h1 class="text-center">Como funciona?</h1>
+                    <span style="background: #92d4de; width: 290px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
+                </div>
                 <p class="text-center">O Doe-se conecta os hemocentros com potenciais doadores, ao notar necessidades específicas de cada hemocentro, nossos algoritmos disparam os chamados para os heróis!</p>
 
                 <div class="col-12 little-shadow p-4 my-3">
                     <h3>1. Cadastre-se</h3>
 
                     <div class="d-flex align-items-center my-4">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-4 col-sm-3 d-flex justify-content-center">
                             <img src="_assets/img/cadastrese.png" class="img-fluid" alt="Cadastre-se!">
                         </div>
                         <div class="col-8 col-sm-9">
@@ -232,7 +237,7 @@
                     <h3>2. Responda a triagem</h3>
 
                     <div class="d-flex align-items-center my-4">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-4 col-sm-3 d-flex justify-content-center">
                             <img src="_assets/img/triagem.png" class="img-fluid" alt="Prancheta, responda a triagem!">
                         </div>
                         <div class="col-8 col-sm-9">
@@ -245,7 +250,7 @@
                     <h3>3. Receba um chamado</h3>
 
                     <div class="d-flex align-items-center my-4">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-4 col-sm-3 d-flex justify-content-center">
                             <img src="_assets/img/hero.png" class="img-fluid" alt="Seja um herói!">
                         </div>
                         <div class="col-8 col-sm-9">
@@ -258,7 +263,7 @@
                     <h3>4. Salve vidas</h3>
 
                     <div class="d-flex align-items-center my-4">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-4 col-sm-3 d-flex justify-content-center">
                             <img src="_assets/img/blood.png" class="img-fluid" alt="Bolsa de sangue feliz!">
                         </div>
                         <div class="col-8 col-sm-9">
@@ -271,7 +276,7 @@
                     <h3>5. Pontue</h3>
 
                     <div class="d-flex align-items-center my-4">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-4 col-sm-3 d-flex justify-content-center">
                             <img src="_assets/img/pontue.png" class="img-fluid" alt="Medalha de estelinha, acumule pontos!">
                         </div>
                         <div class="col-8 col-sm-9">
@@ -283,8 +288,11 @@
 
             <!-- Doe-se News -->
             <section id="news" class="menu-scroll-security col-12 col-xl-10 mx-auto">
-                <h1 class="text-center mb-5">Doe-se News</h1>
-
+                <div class="d-flex justify-content-center align-items-end mb-5">
+                    <h1 class="text-center">Doe-se News</h1>
+                    <span style="background: #92d4de; width: 250px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
+                </div>
+                
                 <div class="container-fluid">
         	    	<div id="carousel-example" class="carousel slide" data-ride="carousel">
         	    		<div class="carousel-inner row w-100 mx-auto" role="listbox">
@@ -332,8 +340,11 @@
 
             <!-- Hemocentros Parceiros -->
             <section id="bloodCenters" class="menu-scroll-security container-fluid px-0">
-                <h1 class="text-center mb-5">Hemocentros Parceiros</h1>
-
+                <div class="d-flex justify-content-center align-items-end mb-5">
+                    <h1 class="text-center">Hemocentros</h1>
+                    <span style="background: #92d4de; width: 260px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
+                </div>
+                
                 <div style="height: 60vh;">
                     <iframe class="col-12 p-0 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29835.502593125606!2d-49.37844992495537!3d-20.814019478971108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1588448607797!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
@@ -342,7 +353,10 @@
             <!-- Entre em Contato -->
             <section id="contato" class="secutiry-margin menu-scroll-security container-fluid mb-5">
                 <div class="col-12 col-lg-4 mx-auto mb-4">
-                    <h1 class="text-center mb-5">Entre em contato</h1>
+                    <div class="d-flex justify-content-center align-items-end mb-5">
+                        <h1 class="text-center">Entre em Contato</h1>
+                        <span style="background: #92d4de; width: 320px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
+                    </div>
 
                     <div class="d-flex align-items-center">
                         <div class="d-flex flex-column align-items-center col-4">
