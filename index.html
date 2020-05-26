@@ -4,7 +4,6 @@
         <title>Doe-se</title>
         <link rel="shortcut icon" href="_assets/img/favicon.ico"/>
 
-        <!-- Meta Tags -->
         <meta charset="utf-8">
         <meta name="author" content="Davi Massaru Teixeira Muta, Lucas Otaviani Bergamo de Oliveira, Willian Rodrigues Liduenha">
         <meta name="generator" content="Visual Studio Code">
@@ -13,7 +12,6 @@
         <meta name="application-name" content="Doe-se">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Css Imports -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="_css/styles.css">
         <link rel="stylesheet" href="_css/animate.css">
@@ -54,7 +52,7 @@
                             <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM DOADOR</a>
                         </li>
                         <li id="whatsapp" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
-                            <a class="nav-link text-lightgray text-center" href="#sobre">ENTRE EM CONTATO</a>
+                            <a class="nav-link text-lightgray text-center" target="_blank" href="https://web.whatsapp.com/send?phone=+5517997587290">ENTRE EM CONTATO</a>
                         </li>
                     </ul>
                 </div>
@@ -87,9 +85,7 @@
             <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
         </section>
 
-        <!-- Container geral -->
         <section class="col-12 px-0" style="margin-top: 18%;">
-            <!-- Como Funciona -->
             <section id="howItWorks" class="secutiry-margin menu-scroll-security d-none d-md-block d-md-flex col-md-10 mx-auto">
                 <div class="col-12 col-xl-7 px-lg-5">
                     <div class="d-flex justify-content-center align-items-end mb-5">
@@ -99,7 +95,6 @@
                     <p class="text-center">O Doe-se conecta os hemocentros com potenciais doadores, ao notar necessidades específicas de cada hemocentro, nossos algoritmos disparam os chamados para os heróis!</p>
 
                     <section id="way" class="row">
-                        <!-- # 1 -->
                         <div class="col-5 my-3">
                             <h3>Cadastre-se</h3>
                             <p class="text-secondary">Em poucos passos você consegue se cadastrar, com a finalização do cadastro já pode responser a ficha de triagem.</p>
@@ -119,8 +114,7 @@
                                 <img src="_assets/img/cadastrese.png" class="img-fluid" alt="Cadastre-se!">
                             </div>
                         </div>
-                    
-                        <!-- # 2 -->
+
                         <div class="col-5 d-flex align-items-center px-0 bg-gray my-3">
                             <div class="col-3 col-md-2 d-flex justify-content-center align-items-center h-100 bg-red">
                                 <p class="m-0 text-white h2 source-sans-pro">02</p>
@@ -140,8 +134,7 @@
                             <h3>Responda a triagem</h3>
                             <p class="text-secondary">Responda a triagem para sabermos se você está aopto para doar, ou avisaremos quando estiver!</p>
                         </div>
-                    
-                        <!-- # 3 -->
+
                         <div class="col-5 my-3">
                             <h3>Receba um chamado</h3>
                             <p class="text-secondary">Quando um hemocentro perto de você precisar de doações do seu tipo sanguíneo, você receberá um chamado.</p>
@@ -162,7 +155,6 @@
                             </div>
                         </div>
                     
-                        <!-- # 4 -->
                         <div class="col-5 d-flex align-items-center px-0 bg-gray my-3">
                             <div class="col-3 col-md-2 d-flex justify-content-center align-items-center h-100 bg-red">
                                 <p class="m-0 text-white h2 source-sans-pro">04</p>
@@ -183,7 +175,6 @@
                             <p class="text-secondary">Basta ir para a doação seguindo as recomendações e pronto, salve até quatro vidas!</p>
                         </div>
                     
-                        <!-- # 5 -->
                         <div class="col-5 my-3">
                             <h3>Pontue</h3>
                             <p class="text-secondary">Cada doação vale pontos, você sobe no ranking e ainda pode trocar pontos por mimos incríveis, final, você merece!</p>
@@ -204,7 +195,25 @@
                             </div>
                         </div>
 
-                        <button class="mt-5 mx-auto blue_button w-50">CADASTRE-SE</button>
+                        <button class="mt-5 mx-auto blue_button w-50" data-toggle="modal" data-target="#exampleModalCenter">CADASTRE-SE</button>
+                    </section>
+
+                    <section>
+                        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content" >
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center" id="exampleModalLongTitle">Formulário para contato</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe style="height: 75vh;" class="col-12" src="https://docs.google.com/forms/d/e/1FAIpQLScNR4hCuq4sFE25jWGKgpN63f2zoOH6s0BHOjGYWtkVXuY9Mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
 
@@ -284,9 +293,28 @@
                         </div>
                     </div>
                 </div>
+
+                <button class="d-block blue_button w-75 mt-5 mx-auto" data-toggle="modal" data-target="#mobileModal">CADASTRE-SE</button>
+
+                <section>
+                    <div class="modal fade bd-example-modal-lg" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content" style="height: 98vh;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="exampleModalLongTitle">Formulário para contato</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe style="height: 100%;" class="col-12" src="https://docs.google.com/forms/d/e/1FAIpQLScNR4hCuq4sFE25jWGKgpN63f2zoOH6s0BHOjGYWtkVXuY9Mw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
 
-            <!-- Doe-se News -->
             <section id="news" class="menu-scroll-security col-12 col-xl-10 mx-auto">
                 <div class="d-flex justify-content-center align-items-end mb-5">
                     <h1 class="text-center">Doe-se News</h1>
@@ -297,28 +325,30 @@
         	    	<div id="carousel-example" class="carousel slide" data-ride="carousel">
         	    		<div class="carousel-inner row w-100 mx-auto" role="listbox">
                 			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                <div class="position-absolute notice-hover p-2">
+                                    <h3 class="p-2">Notícia 1</h3>
+                                </div>
                                 <img src="_assets/backgrounds/1.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img1">
-                                <div class="sobreposicao"></div>
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/2.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img2">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/3.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img3">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/4.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img4">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/5.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img5">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/6.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img6">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/7.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img7">
 			    			</div>
-			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+			    			<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 notice-hover">
 			    				<img src="_assets/backgrounds/8.jpg" class="img-fluid mx-auto d-block carousel-content" alt="img8">
 			    			</div>
         	    		</div>
@@ -338,7 +368,6 @@
                 </div>
             </section>
 
-            <!-- Hemocentros Parceiros -->
             <section id="bloodCenters" class="menu-scroll-security container-fluid px-0">
                 <div class="d-flex justify-content-center align-items-end mb-5">
                     <h1 class="text-center">Hemocentros</h1>
@@ -346,33 +375,46 @@
                 </div>
                 
                 <div style="height: 60vh;">
-                    <iframe class="col-12 p-0 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29835.502593125606!2d-49.37844992495537!3d-20.814019478971108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1588448607797!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe class="col-12 p-0 h-100" src="https://www.google.com/maps/d/u/0/embed?mid=1-vJiIhWsI7_GAoDAcK0m0kqvBogoHD49" frameborder="0" style="border: none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </section>
 
-            <!-- Entre em Contato -->
             <section id="contato" class="secutiry-margin menu-scroll-security container-fluid mb-5">
-                <div class="col-12 col-lg-4 mx-auto mb-4">
+                <div class="col-12 col-lg-5 mx-auto mb-4">
                     <div class="d-flex justify-content-center align-items-end mb-5">
                         <h1 class="text-center">Entre em Contato</h1>
                         <span style="background: #92d4de; width: 320px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
                     </div>
 
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex flex-column align-items-center col-4">
-                            <img src="_assets/img/whatsapp.png" target="_blank" class="img-fluid icon-width mb-2" alt="Ícone do WhatsApp">
-                            <b>WhatsApp</b>
-                            <a href="#" class="text-dark text-nowrap">(17) 99758-7290</a>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="card col-4 border-0 card-hover mx-2">
+                            <a href="https://web.whatsapp.com/send?phone=+5517997587290" target="_blank">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <img src="_assets/img/whatsapp.png" class="img-fluid icon-width mb-2" alt="Ícone do WhatsApp">
+                                    <b>WhatsApp</b>
+                                    <p class="text-dark text-nowrap"><small>(17) 99758-7290</small></p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="d-flex flex-column align-items-center col-4">
-                            <img src="_assets/img/instagram.png" class="img-fluid icon-width mb-2" alt="ícone do Instagram">
-                            <b>Instagram</b>
-                            <a href="https://www.instagram.com/doeserp/" target="_blank" class="text-dark">@Doeserp</a>
+
+                        <div class="card col-4 border-0 card-hover mx-2">
+                            <a href="https://www.instagram.com/doeserp/" target="_blank">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <img src="_assets/img/instagram.png" class="img-fluid icon-width mb-2" alt="ícone do Instagram">
+                                    <b>Instagram</b>
+                                    <p class="text-dark"><small>@Doeserp</small></p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="d-flex flex-column align-items-center col-4">
-                            <img src="_assets/img/facebook.png" class="img-fluid icon-width mb-2" alt="Ícone do Facebook">
-                            <b>Facebook</b>
-                            <a href="https://www.facebook.com/Doe-se-245663879696342/?epa=SEARCH_BOX" target="_blank" class="text-dark">Doe-se</a>
+
+                        <div class="card col-4 border-0 card-hover mx-2">
+                            <a href="https://www.facebook.com/Doe-se-245663879696342/?epa=SEARCH_BOX" target="_blank">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <img src="_assets/img/facebook.png" class="img-fluid icon-width mb-2" alt="Ícone do Facebook">
+                                    <b>Facebook</b>
+                                    <p class="text-dark"><small>Doe-se</small></p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -390,14 +432,12 @@
             </footer>
         </section>
 
-        <!-- Whastapp Icon -->
         <aside class="fixed-bottom d-none d-lg-block">
-            <a id="contato-whatsapp" href=""></a>
-                <img  width="50px" class="float-right m-4" src="_assets/img/whatsapp_aside.png">
+            <a id="contato-whatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5517997587290">
+                <img width="50px" class="float-right m-4" src="_assets/img/whatsapp_aside.png">
             </a>
         </aside>
 
-        <!-- JavaScript Imports -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
