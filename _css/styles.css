@@ -128,6 +128,10 @@ ul {
     color: #17c29d !important;
 }
 
+.web-start {
+    margin-top: 20%;
+}
+
 #importantOptions li {
     padding: 0px 0px 0px 0px;
 }
@@ -224,6 +228,20 @@ div .sobreposicao:hover {
     animation: boxFadeIn ease 0.2s;
 }
 
+span {
+    position: absolute;
+}
+
+.notice-hover {
+    width: 93%;
+    height: 100%;
+}
+
+.notice-hover:hover {
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+}
+
 @keyframes boxFadeIn {
     0% {
         box-shadow: none;
@@ -240,16 +258,6 @@ div .sobreposicao:hover {
     100% {
         box-shadow: none;
     }
-}
-
-.notice-hover {
-    width: 100%;
-    height: 100%;  
-}
-
-.notice-hover:hover {
-    background-clip: content-box;
-    background-color: rgba(0,0,0,0.5);
 }
 
 @keyframes noticeHoverIn {

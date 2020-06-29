@@ -17,10 +17,12 @@
         <link rel="stylesheet" href="_css/animate.css">
         <link rel="stylesheet" href="_css/media-queries.css">
         <link rel="stylesheet" href="_css/carousel.css">
+        <script type="text/javascript" src="_js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="_js/script.js"></script>
     </head>
 
     <body data-spy="scroll">
-        <header class="fixed-top bg-white">
+        <header class="position-sticky fixed-top bg-white">
             <nav class="navbar navbar-expand-lg navbar-light border-bottom">
                 <a class="navbar-brand" href="#">
                     <img src="_assets/img/logo.svg" height="45" class="d-inline-block align-top" alt="">
@@ -34,32 +36,32 @@
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#howItWorks">Como funciona?<span class="sr-only">(current)</span></a>
+                            <a class="nav-link scroll" href="#howItWorks">Como funciona?<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#news">Doe-se News</a>
+                            <a class="nav-link" href="notices.html">Doe-se News</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#bloodCenters">Hemocentros</a>
+                            <a class="nav-link scroll" href="#bloodCenters">Hemocentros</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#about">Sobre nós</a>
+                            <a class="nav-link scroll" href="#about">Contato</a>
                         </li>
                     </ul>
 
                     <ul id="importantOptions" class="navbar-nav">
                         <li id="donator" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
-                            <a class="nav-link text-lightgray text-center" href="#sobre">SEJA UM DOADOR</a>
+                            <a class="nav-link text-lightgray text-center" href="#howItWorks">SEJA UM DOADOR</a>
                         </li>
                         <li id="whatsapp" class="nav-item mx-2 my-2 border-rounded border border-lightgray px-2">
-                            <a class="nav-link text-lightgray text-center" target="_blank" href="https://web.whatsapp.com/send?phone=+5517997587290">ENTRE EM CONTATO</a>
+                            <a class="nav-link text-lightgray text-center" target="_blank" href="https://web.whatsapp.com/send?phone=5517997587290&text=Ol%C3%A1%2C+vim+pelo+site+doese.com.br+e+gostaria+de+conversar+com+voc%C3%AAs%21">ENTRE EM CONTATO</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main id="home" class="d-flex justify-content-center align-items-center flex-wrap" height="100vh" style="padding-top: 72px;">
+        <main id="home" class="d-flex justify-content-center align-items-center flex-wrap" height="100vh">
             <section class="d-flex align-items-start col-xl-10 flex-wrap">
                 <div class="col-12 col-md-6 col-xl-4">
                     <h1 id="title" class="font-up">Doe sangue,<br><span class="text-lightblue">doe vida,</span><br>Doe-se</h1>
@@ -69,7 +71,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
-                    <img class="img-fluid" src="_assets/img/doacao_principal.svg">
+                    <img class="img-fluid" src="_assets/img/doacao_principal_example.png">
                 </div>
 
                 <div class="col-12 col-xl-4 d-none d-xl-block">
@@ -85,7 +87,7 @@
             <img class="img-fluid p-0 col-12 full-image" src="_assets/img/test.svg">
         </section>
 
-        <section class="col-12 px-0" style="margin-top: 18%;">
+        <section class="col-12 px-0 web-start">
             <section id="howItWorks" class="secutiry-margin menu-scroll-security d-none d-md-block d-md-flex col-md-10 mx-auto">
                 <div class="col-12 col-xl-7 px-lg-5">
                     <div class="d-flex justify-content-center align-items-end mb-5">
@@ -315,7 +317,7 @@
                 </section>
             </section>
 
-            <section id="news" class="menu-scroll-security col-12 col-xl-10 mx-auto">
+            <!-- <section id="news" class="menu-scroll-security col-12 col-xl-10 mx-auto">
                 <div class="d-flex justify-content-center align-items-end mb-5">
                     <h1 class="text-center">Doe-se News</h1>
                     <span style="background: #92d4de; width: 250px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
@@ -366,7 +368,7 @@
                 <div class="d-flex justify-content-center">
                     <a href="notices.html"><button class="mt-5 blue_button">TODAS AS NOTÍCIAS</button></a>
                 </div>
-            </section>
+            </section> -->
 
             <section id="bloodCenters" class="menu-scroll-security container-fluid px-0">
                 <div class="d-flex justify-content-center align-items-end mb-5">
@@ -379,16 +381,16 @@
                 </div>
             </section>
 
-            <section id="contato" class="secutiry-margin menu-scroll-security container-fluid mb-5">
+            <section id="about" class="secutiry-margin menu-scroll-security container-fluid mb-5">
                 <div class="col-12 col-lg-5 mx-auto mb-4">
                     <div class="d-flex justify-content-center align-items-end mb-5">
                         <h1 class="text-center">Entre em Contato</h1>
                         <span style="background: #92d4de; width: 320px; height: 25px; position: absolute; border-radius: 100px; z-index: -1; transform: translateY(-5px);"></span>
                     </div>
 
-                    <div class="col-12 d-flex align-items-center justify-content-center">
-                        <div class="card col-4 border-0 card-hover mx-2">
-                            <a href="https://web.whatsapp.com/send?phone=+5517997587290" target="_blank">
+                    <div class="col-12 d-flex align-items-center justify-content-center flex-wrap">
+                        <div class="card col-12 col-md-4 border-0 card-hover">
+                            <a href="https://web.whatsapp.com/send?phone=5517997587290&text=Ol%C3%A1%2C+vim+pelo+site+doese.com.br+e+gostaria+de+conversar+com+voc%C3%AAs%21" target="_blank">
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <img src="_assets/img/whatsapp.png" class="img-fluid icon-width mb-2" alt="Ícone do WhatsApp">
                                     <b>WhatsApp</b>
@@ -397,7 +399,7 @@
                             </a>
                         </div>
 
-                        <div class="card col-4 border-0 card-hover mx-2">
+                        <div class="card col-12 col-md-4 border-0 card-hover">
                             <a href="https://www.instagram.com/doeserp/" target="_blank">
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <img src="_assets/img/instagram.png" class="img-fluid icon-width mb-2" alt="ícone do Instagram">
@@ -407,7 +409,7 @@
                             </a>
                         </div>
 
-                        <div class="card col-4 border-0 card-hover mx-2">
+                        <div class="card col-12 col-md-4 border-0 card-hover">
                             <a href="https://www.facebook.com/Doe-se-245663879696342/?epa=SEARCH_BOX" target="_blank">
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <img src="_assets/img/facebook.png" class="img-fluid icon-width mb-2" alt="Ícone do Facebook">
@@ -423,17 +425,17 @@
             <footer class="d-flex align-items-end">
                 <div class="container justify-content-center mb-4">
                     <div class="d-flex justify-content-around align-items-center flex-wrap">
-                        <img src="_assets/img/google.png" alt="Google Logotipo" class="img-fluid">
-                        <img src="_assets/img/cps.png" alt="Centro Paula Souza Logotipo" class="img-fluid">
-                        <img src="_assets/img/estado.png" alt="Governo do Estado de São Paulo Logotipo" class="img-fluid">
-                        <img src="_assets/img/ideas_de_futuro.png" alt="Ideias de Futuro Logotipo" class="img-fluid">
+                        <img src="_assets/img/google.png" alt="Google Logotipo" class="img-responsive">
+                        <img src="_assets/img/cps.png" alt="Centro Paula Souza Logotipo" class="img-responsive">
+                        <img src="_assets/img/estado.png" alt="Governo do Estado de São Paulo Logotipo" class="img-responsive">
+                        <img src="_assets/img/ideas_de_futuro.png" alt="Ideias de Futuro Logotipo" class="img-responsive">
                     </div>
                 </div>
             </footer>
         </section>
 
         <aside class="fixed-bottom d-none d-lg-block">
-            <a id="contato-whatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=+5517997587290">
+            <a id="contato-whatsapp" target="_blank" href="https://web.whatsapp.com/send?phone=5517997587290&text=Ol%C3%A1%2C+vim+pelo+site+doese.com.br+e+gostaria+de+conversar+com+voc%C3%AAs%21">
                 <img width="50px" class="float-right m-4" src="_assets/img/whatsapp_aside.png">
             </a>
         </aside>
